@@ -63,12 +63,12 @@
 				cache: true,
 	            url: "https://api.instagram.com/v1/users/2189525305/?access_token=523939121.91ba99d.9dd78337bc0b42e8a68b3c0ad3bb1c83",
 
-             
+
 				success: function(data) {
 					var ig_count = data.data.counts.followed_by.toString();
 					$("#instagram_count").text(ig_count);
 					
-					var remaining_for_goal_insta = 3000-ig_count;
+					var remaining_for_goal_insta = 500-ig_count;
 					if(remaining_for_goal_insta>0){
 						$("#faltan_insta").text(remaining_for_goal_insta);
 						
